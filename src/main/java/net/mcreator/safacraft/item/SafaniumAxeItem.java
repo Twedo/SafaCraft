@@ -5,11 +5,11 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.AxeItem;
 
+import net.mcreator.safacraft.itemgroup.SafaCraftItemGroup;
 import net.mcreator.safacraft.SafacraftModElements;
 
 @SafacraftModElements.ModElement.Tag
@@ -32,7 +32,7 @@ public class SafaniumAxeItem extends SafacraftModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 6f;
+				return 34f;
 			}
 
 			public int getHarvestLevel() {
@@ -46,7 +46,7 @@ public class SafaniumAxeItem extends SafacraftModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(SafaniumIngotItem.block, (int) (1)));
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -3f, new Item.Properties().group(SafaCraftItemGroup.tab)) {
 		}.setRegistryName("safanium_axe"));
 	}
 }

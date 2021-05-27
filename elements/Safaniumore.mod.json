@@ -2,12 +2,12 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "safanium_block",
-    "textureTop": "safanium_block",
-    "textureLeft": "safanium_block",
-    "textureFront": "safanium_block",
-    "textureRight": "safanium_block",
-    "textureBack": "safanium_block",
+    "texture": "safanium_ore",
+    "textureTop": "safanium_ore",
+    "textureLeft": "safanium_ore",
+    "textureFront": "safanium_ore",
+    "textureRight": "safanium_ore",
+    "textureBack": "safanium_ore",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -76,7 +76,7 @@
     },
     "luminance": 7,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 2,
     "spawnParticles": true,
     "particleToSpawn": {
       "value": "SOUL"
@@ -101,15 +101,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface",
+      "CUSTOM:FlappyLair"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 20,
+    "frequencyOnChunk": 12,
     "minGenerateHeight": 1,
     "maxGenerateHeight": 45
   }

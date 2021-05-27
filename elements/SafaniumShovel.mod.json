@@ -3,12 +3,12 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "safanium_shovel",
+    "texture": "safa_shovel",
     "customModelName": "Normal",
     "name": "Safanium Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:SafaCraft"
     },
     "toolType": "Spade",
     "harvestLevel": 8,

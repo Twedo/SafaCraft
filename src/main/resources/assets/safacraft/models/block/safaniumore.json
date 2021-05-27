@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "safacraft:blocks/safanium_block",
-    "up": "safacraft:blocks/safanium_block",
-    "north": "safacraft:blocks/safanium_block",
-    "east": "safacraft:blocks/safanium_block",
-    "south": "safacraft:blocks/safanium_block",
-    "west": "safacraft:blocks/safanium_block",
+    "down": "safacraft:blocks/safanium_ore",
+    "up": "safacraft:blocks/safanium_ore",
+    "north": "safacraft:blocks/safanium_ore",
+    "east": "safacraft:blocks/safanium_ore",
+    "south": "safacraft:blocks/safanium_ore",
+    "west": "safacraft:blocks/safanium_ore",
     "particle": "safacraft:blocks/safa_particles"
   }
 }

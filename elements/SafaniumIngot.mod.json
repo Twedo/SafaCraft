@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "safanium_ingot",
+    "texture": "safaingot2",
     "customModelName": "Normal",
     "name": "Safanium Ingot",
-    "rarity": "RARE",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:SafaCraft"
     },

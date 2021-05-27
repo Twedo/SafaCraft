@@ -198,6 +198,255 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "safanium_hoe_recipe"
+    },
+    {
+      "name": "Testarmor",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safaarmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SafaHeadRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_head_recipe"
+    },
+    {
+      "name": "SafaChestRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_chest_recipe"
+    },
+    {
+      "name": "SafaLegsRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_legs_recipe"
+    },
+    {
+      "name": "SafaBootsRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_boots_recipe"
+    },
+    {
+      "name": "GameIntro",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "game_intro",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummonFlappyBird",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "summon_flappy_bird",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlappySpawn",
+      "type": "gui",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flappy_spawn"
+    },
+    {
+      "name": "OpenFlappySpawn",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_flappy_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Summoner",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "summoner"
+    },
+    {
+      "name": "StoryLine",
+      "type": "gui",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "story_line"
+    },
+    {
+      "name": "OpenStoryline",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_storyline",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "QuestBook",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quest_book"
+    },
+    {
+      "name": "OpenStoryline2",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_storyline_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenStoryline3",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_storyline_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -205,18 +454,24 @@
   "language_map": {
     "en_us": {
       "block.safacraft.safaniumore": "Safanium Ore",
+      "block.safacraft.summoner": "Summoner",
       "biome.safacraft.flappy_plains": "Flappy Plains",
+      "item.safacraft.safaarmor_chestplate": "Safa\u0027s Body",
       "item.safacraft.safanium_sword": "Safanium Sword",
       "entity.safacraft.safaboss": "Flappy Bird",
       "item.safacraft.safanium_ingot": "Safanium Ingot",
       "itemGroup.tabsafa_craft": "Safa Craft",
+      "item.safacraft.safaarmor_helmet": "Safa\u0027s Head",
       "item.safacraft.safaboss_spawn_egg": "Flappy Bird Spawn Egg",
       "item.safacraft.safanium_hoe": "Safanium Hoe",
+      "item.safacraft.safaarmor_leggings": "Safa\u0027s Legs",
       "item.safacraft.safanium_pickaxe": "Safanium Pickaxe",
       "item.safacraft.safa_totem": "Safa Totem",
       "item.safacraft.safanium_shovel": "Safanium Shovel",
       "item.safacraft.flappy_lair": "Flappy Lair Portal Igniter",
-      "item.safacraft.safanium_axe": "Safanium Axe"
+      "item.safacraft.quest_book": "Quest Book",
+      "item.safacraft.safanium_axe": "Safanium Axe",
+      "item.safacraft.safaarmor_boots": "Safa\u0027s Cleats"
     }
   },
   "foldersRoot": {

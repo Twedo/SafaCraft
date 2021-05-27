@@ -5,6 +5,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
@@ -16,6 +18,8 @@ import net.minecraft.network.play.server.SChangeGameStatePacket;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 
 import net.mcreator.safacraft.SafacraftModElements;
 import net.mcreator.safacraft.SafacraftMod;
@@ -83,6 +87,18 @@ public class SafaTotemRightClickedInAirProcedure extends SafacraftModElements.Mo
 						((ServerPlayerEntity) _ent).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
 					}
 				}
+			}
+			if (world instanceof ServerWorld) {
+				((World) world).getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+						"title @p title {\"text\":\"Welcome to Flappy Bird's Lair!\", \"bold\":true, \"italic\":false, \"color\":\"yellow\"}");
+			}
+			if (world instanceof ServerWorld) {
+				((World) world).getServer().getCommandManager().handleCommand(
+						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+						"title @p subtitle {\"text\":\"Check out the book in your inventory!\", \"italic\":false, \"color\":\"blue\"}");
 			}
 		}
 	}

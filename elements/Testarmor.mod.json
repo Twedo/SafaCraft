@@ -1,0 +1,58 @@
+{
+  "_fv": 18,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "safa_helmet",
+    "enableBody": true,
+    "textureBody": "safa_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "safa_leggings",
+    "enableBoots": true,
+    "textureBoots": "safa_cleats",
+    "creativeTab": {
+      "value": "CUSTOM:SafaCraft"
+    },
+    "armorTextureFile": "safanium",
+    "helmetName": "Safa's Head",
+    "bodyName": "Safa's Body",
+    "leggingsName": "Safa's Legs",
+    "bootsName": "Safa's Cleats",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "64by32_safa.png",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "64by32_safa.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "64by32_safa.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "64by32_safa.png",
+    "maxDamage": 25,
+    "damageValueHelmet": 8,
+    "damageValueBody": 13,
+    "damageValueLeggings": 10,
+    "damageValueBoots": 6,
+    "enchantability": 9,
+    "toughness": 3.0,
+    "knockbackResistance": 0.7,
+    "equipSound": {
+      "value": "item.totem.use"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SafaniumIngot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "safacraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "safacraft:safanium_ingot"
+    },
+    "2": {
+      "item": "safacraft:safanium_ingot"
+    },
+    "3": {
+      "item": "safacraft:safanium_ingot"
+    },
+    "5": {
+      "item": "safacraft:safanium_ingot"
+    }
+  },
+  "result": {
+    "item": "safacraft:safaarmor_boots",
+    "count": 1
+  }
+}

@@ -3,19 +3,19 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "safanium_axe",
+    "texture": "safa_axe",
     "customModelName": "Normal",
     "name": "Safanium Axe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:SafaCraft"
     },
     "toolType": "Axe",
     "harvestLevel": 8,
     "efficiency": 14.0,
     "attackSpeed": 1.0,
     "enchantability": 56,
-    "damageVsEntity": 8.0,
+    "damageVsEntity": 36.0,
     "usageCount": 1741,
     "blocksAffected": [],
     "hasGlow": false,

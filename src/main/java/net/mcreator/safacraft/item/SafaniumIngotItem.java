@@ -25,7 +25,7 @@ public class SafaniumIngotItem extends SafacraftModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(SafaCraftItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
+			super(new Item.Properties().group(SafaCraftItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("safanium_ingot");
 		}
 

@@ -1,0 +1,60 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Place Your Totem",
+          "color": {
+            "value": -3407821,
+            "falpha": 0.0
+          },
+          "name": "Place Your Totem",
+          "x": 173,
+          "y": 59
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "SummonFlappyBird"
+          },
+          "onTakenFromSlot": {
+            "name": "SummonFlappyBird"
+          },
+          "onStackTransfer": {
+            "name": "SummonFlappyBird"
+          },
+          "name": "Slot #0",
+          "x": 204,
+          "y": 82
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "SummonFlappyBird"
+    },
+    "onTick": {
+      "name": "SummonFlappyBird"
+    },
+    "onClosed": {
+      "name": "SummonFlappyBird"
+    }
+  }
+}

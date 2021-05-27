@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "safacraft:items/safanium_pickaxe"
+    "layer0": "safacraft:items/safa_pickaxe"
   }
 }

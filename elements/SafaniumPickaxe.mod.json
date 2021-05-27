@@ -3,12 +3,12 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "safanium_pickaxe",
+    "texture": "safa_pickaxe",
     "customModelName": "Normal",
     "name": "Safanium Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:SafaCraft"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 8,
