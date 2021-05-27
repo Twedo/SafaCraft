@@ -1,0 +1,149 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Safaboss",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safaboss"
+    },
+    {
+      "name": "SafaniumIngot",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safanium_ingot"
+    },
+    {
+      "name": "SafaCraft",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_craft"
+    },
+    {
+      "name": "Safaniumore",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safaniumore"
+    },
+    {
+      "name": "SafaTotemRightClickedInAir",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_totem_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SafaTotem",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_totem"
+    },
+    {
+      "name": "SafaTotemRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_totem_recipe"
+    },
+    {
+      "name": "FlappyPlains",
+      "type": "biome",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flappy_plains"
+    },
+    {
+      "name": "FlappyLair",
+      "type": "dimension",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flappy_lair",
+      "metadata": {
+        "ep": false
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.safacraft.safaniumore": "Safanium Ore",
+      "biome.safacraft.flappy_plains": "Flappy Plains",
+      "item.safacraft.safa_totem": "Safa Totem",
+      "item.safacraft.flappy_lair": "Flappy Lair Portal Igniter",
+      "entity.safacraft.safaboss": "Flappy Bird",
+      "item.safacraft.safanium_ingot": "Safanium Ingot",
+      "itemGroup.tabsafa_craft": "Safa Craft",
+      "item.safacraft.safaboss_spawn_egg": "Flappy Bird Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "safacraft",
+    "modName": "SafaCraft",
+    "version": "1.0.0",
+    "author": "teamv, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.safacraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

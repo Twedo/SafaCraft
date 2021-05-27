@@ -1,0 +1,30 @@
+{
+  "group": "safacraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "safacraft:safanium_ingot"
+    },
+    "3": {
+      "item": "safacraft:safanium_ingot"
+    },
+    "4": {
+      "item": "minecraft:ender_pearl"
+    },
+    "5": {
+      "item": "safacraft:safanium_ingot"
+    },
+    "7": {
+      "item": "safacraft:safanium_ingot"
+    }
+  },
+  "result": {
+    "item": "safacraft:safa_totem",
+    "count": 1
+  }
+}
