@@ -54,10 +54,7 @@
       "sea_level": 63,
       "disable_mob_generation": true,
       "default_block": {
-        "Name": "minecraft:hay_block",
-        "Properties": {
-          "axis": "y"
-        }
+        "Name": "minecraft:stone"
       },
       "default_fluid": {
         "Name": "minecraft:water",

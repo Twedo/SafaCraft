@@ -9,14 +9,10 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.HAY_BLOCK"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
-    },
-    "airColor": {
-      "value": -205,
-      "falpha": 0.0
     },
     "canRespawnHere": true,
     "hasFog": false,

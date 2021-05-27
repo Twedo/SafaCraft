@@ -4,14 +4,10 @@
   "definition": {
     "name": "Flappy Plains",
     "groundBlock": {
-      "value": "Blocks.GRASS_PATH"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
       "value": "Blocks.DIRT#0"
-    },
-    "airColor": {
-      "value": -16777063,
-      "falpha": 0.0
     },
     "grassColor": {
       "value": -205,

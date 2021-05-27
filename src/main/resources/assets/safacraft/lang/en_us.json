@@ -1,10 +1,15 @@
 {
   "block.safacraft.safaniumore": "Safanium Ore",
   "biome.safacraft.flappy_plains": "Flappy Plains",
-  "item.safacraft.safa_totem": "Safa Totem",
-  "item.safacraft.flappy_lair": "Flappy Lair Portal Igniter",
+  "item.safacraft.safanium_sword": "Safanium Sword",
   "entity.safacraft.safaboss": "Flappy Bird",
   "item.safacraft.safanium_ingot": "Safanium Ingot",
   "itemGroup.tabsafa_craft": "Safa Craft",
-  "item.safacraft.safaboss_spawn_egg": "Flappy Bird Spawn Egg"
+  "item.safacraft.safaboss_spawn_egg": "Flappy Bird Spawn Egg",
+  "item.safacraft.safanium_hoe": "Safanium Hoe",
+  "item.safacraft.safanium_pickaxe": "Safanium Pickaxe",
+  "item.safacraft.safa_totem": "Safa Totem",
+  "item.safacraft.safanium_shovel": "Safanium Shovel",
+  "item.safacraft.flappy_lair": "Flappy Lair Portal Igniter",
+  "item.safacraft.safanium_axe": "Safanium Axe"
 }

@@ -42,10 +42,10 @@ public class FlappyPlainsBiome extends SafacraftModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16777063).setWaterColor(-16777114).setWaterFogColor(-16763905)
-						.withSkyColor(-16777063).withFoliageColor(-103).withGrassColor(-205).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-16777114).setWaterFogColor(-16763905)
+						.withSkyColor(7972607).withFoliageColor(-103).withGrassColor(-205).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_PATH.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 								Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState())));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
 						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SPRUCE_LOG.getDefaultState()),

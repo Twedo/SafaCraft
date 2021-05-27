@@ -35,10 +35,10 @@ public class FlappyLairDimension extends SafacraftModElements.ModElement {
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(Blocks.HAY_BLOCK.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(Blocks.STONE.getDefaultState().getBlock()).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(Blocks.HAY_BLOCK.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(Blocks.STONE.getDefaultState().getBlock()).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -51,7 +51,7 @@ public class FlappyLairDimension extends SafacraftModElements.ModElement {
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(Float.NaN, true, DimensionRenderInfo.FogType.NONE, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(1, 1, 0.2);
+				return color;
 			}
 
 			@Override
