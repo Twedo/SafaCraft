@@ -447,6 +447,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Pipe",
+      "type": "structure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pipe"
+    },
+    {
+      "name": "SummonerTemple",
+      "type": "structure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "summoner_temple"
     }
   ],
   "variable_elements": [],

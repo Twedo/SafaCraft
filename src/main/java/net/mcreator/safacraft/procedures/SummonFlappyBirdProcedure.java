@@ -88,7 +88,24 @@ public class SummonFlappyBirdProcedure extends SafacraftModElements.ModElement {
 					}
 				}
 			}
-			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
+			if (world instanceof ServerWorld) {
+				LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
+				_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
+				_ent.setEffectOnly(true);
+				((World) world).addEntity(_ent);
+			}
+			if (world instanceof ServerWorld) {
+				LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
+				_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
+				_ent.setEffectOnly(true);
+				((World) world).addEntity(_ent);
+			}
+			if (world instanceof ServerWorld) {
+				LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
+				_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
+				_ent.setEffectOnly(true);
+				((World) world).addEntity(_ent);
+			}
 			if (world instanceof ServerWorld) {
 				LightningBoltEntity _ent = EntityType.LIGHTNING_BOLT.create((World) world);
 				_ent.moveForced(Vector3d.copyCenteredHorizontally(new BlockPos((int) x, (int) y, (int) z)));
