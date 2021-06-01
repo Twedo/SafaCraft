@@ -46,7 +46,7 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 8,
+    "attackStrength": 12,
     "attackKnockback": 0.5,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.4,
@@ -93,10 +93,10 @@
     },
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "RAIN"
+      "value": "REVERSE_PORTAL"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 1.000000001490116,
+    "particleSpawningShape": "Tube",
+    "particleSpawningRadious": 1.9,
     "particleAmount": 8,
     "hasAI": true,
     "aiBase": "(none)",

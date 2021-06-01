@@ -67,7 +67,7 @@ public class SafabossEntity extends SafacraftModElements.ModElement {
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.4);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 100);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 8);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 12);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 0.5);
 			event.put(entity, ammma.create());
 		}
@@ -164,14 +164,10 @@ public class SafabossEntity extends SafacraftModElements.ModElement {
 			Entity entity = this;
 			if (true)
 				for (int l = 0; l < 8; ++l) {
-					double d0 = (x + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 1.000000001490116D;
-					double d4 = (random.nextFloat() - 0.5D) * 1.000000001490116D;
-					double d5 = (random.nextFloat() - 0.5D) * 1.000000001490116D;
-					world.addParticle(ParticleTypes.RAIN, d0, d1, d2, d3, d4, d5);
+					double d0 = (x + 0.5) + (random.nextFloat() - 0.5) * 1.9D;
+					double d1 = ((y + 0.7) + (random.nextFloat() - 0.5) * 1.9D * 100) + 0.5;
+					double d2 = (z + 0.5) + (random.nextFloat() - 0.5) * 1.9D;
+					world.addParticle(ParticleTypes.REVERSE_PORTAL, d0, d1, d2, 0, 0, 0);
 				}
 		}
 	}

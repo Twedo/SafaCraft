@@ -32,7 +32,7 @@ public class SafaniumHoeItem extends SafacraftModElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 6f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {

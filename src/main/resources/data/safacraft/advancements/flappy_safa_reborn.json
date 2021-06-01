@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "safacraft:safaarmor_helmet"
+    },
+    "title": {
+      "translate": "advancements.flappy_safa_reborn.title"
+    },
+    "description": {
+      "translate": "advancements.flappy_safa_reborn.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "flappy_safa_reborn": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

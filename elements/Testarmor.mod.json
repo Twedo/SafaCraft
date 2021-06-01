@@ -10,6 +10,9 @@
     "textureLeggings": "safa_leggings",
     "enableBoots": true,
     "textureBoots": "safa_cleats",
+    "onHelmetTick": {
+      "name": "SafaRebornProcedure"
+    },
     "creativeTab": {
       "value": "CUSTOM:SafaCraft"
     },

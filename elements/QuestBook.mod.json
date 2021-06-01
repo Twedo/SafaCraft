@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "scrollpic",
     "customModelName": "Normal",
-    "name": "Quest Book",
+    "name": "Quest Scroll",
     "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:SafaCraft"

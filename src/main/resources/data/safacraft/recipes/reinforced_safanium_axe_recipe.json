@@ -1,0 +1,42 @@
+{
+  "group": "safacraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "safacraft:flappy_egg"
+    },
+    "1": {
+      "item": "safacraft:flappy_egg"
+    },
+    "2": {
+      "item": "safacraft:flappy_egg"
+    },
+    "3": {
+      "item": "safacraft:flappy_egg"
+    },
+    "4": {
+      "item": "safacraft:safanium_axe"
+    },
+    "5": {
+      "item": "safacraft:flappy_egg"
+    },
+    "6": {
+      "item": "safacraft:flappy_egg"
+    },
+    "7": {
+      "item": "safacraft:flappy_egg"
+    },
+    "8": {
+      "item": "safacraft:flappy_egg"
+    }
+  },
+  "result": {
+    "item": "safacraft:reinforced_safanium_axe",
+    "count": 1
+  }
+}

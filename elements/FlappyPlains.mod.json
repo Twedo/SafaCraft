@@ -97,6 +97,16 @@
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Flappy"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 15,
+        "spawnType": "ambient"
+      }
+    ]
   }
 }

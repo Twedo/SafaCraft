@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "safa_sword",
+    "customModelName": "Normal",
+    "name": "Reinforced Safanium Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:SafaCraft"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 9,
+    "efficiency": 17.0,
+    "attackSpeed": 1.5,
+    "enchantability": 56,
+    "damageVsEntity": 17.0,
+    "usageCount": 3000,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SafaniumIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

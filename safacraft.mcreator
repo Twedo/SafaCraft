@@ -465,31 +465,198 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "summoner_temple"
+    },
+    {
+      "name": "FlappyEgg",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flappy_egg"
+    },
+    {
+      "name": "Flappy",
+      "type": "mob",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flappy"
+    },
+    {
+      "name": "ReinforcedSafaniumPickaxe",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_pickaxe"
+    },
+    {
+      "name": "ReinforcedSafaniumAxe",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_axe"
+    },
+    {
+      "name": "ReinforcedSafaniumSword",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_sword"
+    },
+    {
+      "name": "ReinforcedSafaniumShovel",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_shovel"
+    },
+    {
+      "name": "ReinforcedSafaniumHoe",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_hoe"
+    },
+    {
+      "name": "ReinforcedSafaniumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_pickaxe_recipe"
+    },
+    {
+      "name": "ReinforcedSafaniumAxeRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_axe_recipe"
+    },
+    {
+      "name": "ReinforcedSafaniumSwordRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_sword_recipe"
+    },
+    {
+      "name": "ReinforcedSafaniumShovelRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_shovel_recipe"
+    },
+    {
+      "name": "ReinforcedSafaniumHoeRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_safanium_hoe_recipe"
+    },
+    {
+      "name": "FlappySafaReborn",
+      "type": "achievement",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flappy_safa_reborn"
+    },
+    {
+      "name": "SafaRebornProcedure",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "safa_reborn_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Done",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.safacraft.safaniumore": "Safanium Ore",
-      "block.safacraft.summoner": "Summoner",
-      "biome.safacraft.flappy_plains": "Flappy Plains",
+      "item.safacraft.reinforced_safanium_shovel": "Reinforced Safanium Shovel",
+      "item.safacraft.flappy_egg": "Flappy Egg",
       "item.safacraft.safaarmor_chestplate": "Safa\u0027s Body",
-      "item.safacraft.safanium_sword": "Safanium Sword",
+      "entity.safacraft.flappy": "Flappy",
       "entity.safacraft.safaboss": "Flappy Bird",
       "item.safacraft.safanium_ingot": "Safanium Ingot",
       "itemGroup.tabsafa_craft": "Safa Craft",
       "item.safacraft.safaarmor_helmet": "Safa\u0027s Head",
       "item.safacraft.safaboss_spawn_egg": "Flappy Bird Spawn Egg",
       "item.safacraft.safanium_hoe": "Safanium Hoe",
-      "item.safacraft.safaarmor_leggings": "Safa\u0027s Legs",
       "item.safacraft.safanium_pickaxe": "Safanium Pickaxe",
+      "item.safacraft.reinforced_safanium_pickaxe": "Reinforced Safanium Pickaxe",
       "item.safacraft.safa_totem": "Safa Totem",
+      "item.safacraft.reinforced_safanium_axe": "Reinforced Safanium Axe",
+      "item.safacraft.safanium_axe": "Safanium Axe",
+      "item.safacraft.safaarmor_boots": "Safa\u0027s Cleats",
+      "block.safacraft.safaniumore": "Safanium Ore",
+      "block.safacraft.summoner": "Summoner",
+      "item.safacraft.reinforced_safanium_sword": "Reinforced Safanium Sword",
+      "biome.safacraft.flappy_plains": "Flappy Plains",
+      "item.safacraft.flappy_spawn_egg": "Flappy Spawn Egg",
+      "item.safacraft.safanium_sword": "Safanium Sword",
+      "advancements.flappy_safa_reborn.descr": "You have become the reincarnation of Flappy Safa",
+      "item.safacraft.reinforced_safanium_hoe": "Reinforced Safanium Hoe",
+      "advancements.flappy_safa_reborn.title": "Flappy Safa Reborn",
+      "item.safacraft.safaarmor_leggings": "Safa\u0027s Legs",
       "item.safacraft.safanium_shovel": "Safanium Shovel",
       "item.safacraft.flappy_lair": "Flappy Lair Portal Igniter",
-      "item.safacraft.quest_book": "Quest Book",
-      "item.safacraft.safanium_axe": "Safanium Axe",
-      "item.safacraft.safaarmor_boots": "Safa\u0027s Cleats"
+      "item.safacraft.quest_book": "Quest Scroll"
     }
   },
   "foldersRoot": {

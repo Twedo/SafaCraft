@@ -92,13 +92,7 @@ public class SafaTotemRightClickedInAirProcedure extends SafacraftModElements.Mo
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						"title @p title {\"text\":\"Welcome to Flappy Bird's Lair!\", \"bold\":true, \"italic\":false, \"color\":\"yellow\"}");
-			}
-			if (world instanceof ServerWorld) {
-				((World) world).getServer().getCommandManager().handleCommand(
-						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
-								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						"title @p subtitle {\"text\":\"Check out the book in your inventory!\", \"italic\":false, \"color\":\"blue\"}");
+						"title @p title {\"text\":\"Flappy Bird's Lair!\", \"bold\":true, \"italic\":false, \"color\":\"yellow\"}");
 			}
 		}
 	}

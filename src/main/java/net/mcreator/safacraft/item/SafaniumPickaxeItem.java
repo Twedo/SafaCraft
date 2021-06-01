@@ -28,11 +28,11 @@ public class SafaniumPickaxeItem extends SafacraftModElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 14f;
+				return 13f;
 			}
 
 			public float getAttackDamage() {
-				return 6f;
+				return 2f;
 			}
 
 			public int getHarvestLevel() {
