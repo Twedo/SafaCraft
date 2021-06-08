@@ -68,6 +68,9 @@ public class SafacraftModVariables {
 		public INBT writeNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side) {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putBoolean("Done", instance.Done);
+			nbt.putDouble("safa_x", instance.safa_x);
+			nbt.putDouble("safa_y", instance.safa_y);
+			nbt.putDouble("safa_z", instance.safa_z);
 			return nbt;
 		}
 
@@ -75,11 +78,17 @@ public class SafacraftModVariables {
 		public void readNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side, INBT inbt) {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.Done = nbt.getBoolean("Done");
+			instance.safa_x = nbt.getDouble("safa_x");
+			instance.safa_y = nbt.getDouble("safa_y");
+			instance.safa_z = nbt.getDouble("safa_z");
 		}
 	}
 
 	public static class PlayerVariables {
 		public boolean Done = false;
+		public double safa_x = 0;
+		public double safa_y = 0;
+		public double safa_z = 0;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				SafacraftMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -113,6 +122,9 @@ public class SafacraftModVariables {
 				.orElse(new PlayerVariables()));
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		clone.Done = original.Done;
+		clone.safa_x = original.safa_x;
+		clone.safa_y = original.safa_y;
+		clone.safa_z = original.safa_z;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -138,6 +150,9 @@ public class SafacraftModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
 					variables.Done = message.data.Done;
+					variables.safa_x = message.data.safa_x;
+					variables.safa_y = message.data.safa_y;
+					variables.safa_z = message.data.safa_z;
 				}
 			});
 			context.setPacketHandled(true);

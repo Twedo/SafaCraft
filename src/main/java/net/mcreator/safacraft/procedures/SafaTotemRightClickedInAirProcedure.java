@@ -21,6 +21,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.safacraft.SafacraftModVariables;
 import net.mcreator.safacraft.SafacraftModElements;
 import net.mcreator.safacraft.SafacraftMod;
 
@@ -70,6 +71,27 @@ public class SafaTotemRightClickedInAirProcedure extends SafacraftModElements.Mo
 				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("You are already in Flappy's Lair"), (false));
 			}
 		} else {
+			{
+				double _setval = (double) x;
+				entity.getCapability(SafacraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.safa_x = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (double) y;
+				entity.getCapability(SafacraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.safa_y = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (double) z;
+				entity.getCapability(SafacraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.safa_z = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			{
 				Entity _ent = entity;
 				if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {

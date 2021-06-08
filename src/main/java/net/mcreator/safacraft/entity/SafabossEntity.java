@@ -33,16 +33,19 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.safacraft.procedures.SpawnEndStructureProcedure;
 import net.mcreator.safacraft.itemgroup.SafaCraftItemGroup;
 import net.mcreator.safacraft.entity.renderer.SafabossRenderer;
 import net.mcreator.safacraft.SafacraftModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @SafacraftModElements.ModElement.Tag
 public class SafabossEntity extends SafacraftModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(300).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(500).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("safaboss").setRegistryName("safaboss");
 	public SafabossEntity(SafacraftModElements instance) {
 		super(instance, 1);
@@ -65,9 +68,9 @@ public class SafabossEntity extends SafacraftModElements.ModElement {
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.4);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 100);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 300);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 12);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 16);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_KNOCKBACK, 0.5);
 			event.put(entity, ammma.create());
 		}
@@ -130,6 +133,24 @@ public class SafabossEntity extends SafacraftModElements.ModElement {
 			if (source == DamageSource.FALL)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SpawnEndStructureProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

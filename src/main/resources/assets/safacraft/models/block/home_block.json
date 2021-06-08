@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "safacraft:blocks/home_sides",
+    "up": "safacraft:blocks/home_top",
+    "north": "safacraft:blocks/home_sides",
+    "east": "safacraft:blocks/home_sides",
+    "south": "safacraft:blocks/home_sides",
+    "west": "safacraft:blocks/home_sides",
+    "particle": "safacraft:blocks/home_sides"
+  }
+}

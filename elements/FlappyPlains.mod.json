@@ -102,10 +102,10 @@
         "entity": {
           "value": "CUSTOM:Flappy"
         },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 15,
-        "spawnType": "ambient"
+        "minGroup": 2,
+        "maxGroup": 6,
+        "weight": 20,
+        "spawnType": "creature"
       }
     ]
   }

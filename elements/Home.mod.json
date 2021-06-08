@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Go Home",
+          "onClick": {
+            "name": "GoHome"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Go Home",
+          "x": 183,
+          "y": 110
+        }
+      }
+    ]
+  }
+}
